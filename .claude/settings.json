@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv sync)",
+      "Bash(uv sync *)",
+      "Bash(uv run pytest*)",
+      "Bash(uv run uvicorn*)",
+      "Bash(uv run alembic*)",
+      "Bash(uv run python*)",
+      "Bash(uv add*)",
+      "Bash(uv remove*)",
+      "Bash(uv lock*)",
+      "Bash(curl http://127.0.0.1:*)",
+      "Bash(curl http://localhost:*)",
+      "Bash(ls*)",
+      "Bash(cat *)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ]
+  }
+}
