@@ -2,7 +2,41 @@
 
 A **Python + FastAPI + uv** starter template with a `.claude/` layer that turns Claude Code into a productive pair-programmer for this stack.
 
-The template is for apps you **build with Claude Code's help**. Clone it, describe your idea, and let Claude scaffold the rest.
+The template is for apps you **build with Claude Code's help**. Grab it from [github.com/OmarLT-222/ai-app-template](https://github.com/OmarLT-222/ai-app-template), describe your idea, and let Claude scaffold the rest.
+
+---
+
+## Starting a new project from this template
+
+This repo is marked as a **GitHub template**, so prefer creating a fresh repo from it rather than cloning it directly. That way your commits go to *your* new repo, not back to the template.
+
+**Option A — GitHub UI (recommended)**
+
+On the [repo page](https://github.com/OmarLT-222/ai-app-template), click **"Use this template" → "Create a new repository"**. GitHub creates a brand-new repo with no template history and `origin` already pointing at your new repo. Then clone that new repo:
+
+```bash
+git clone git@github.com:<you>/<your-new-repo>.git
+cd <your-new-repo>
+```
+
+**Option B — `gh` CLI**
+
+```bash
+gh repo create my-new-app --template OmarLT-222/ai-app-template --private --clone
+cd my-new-app
+```
+
+**Option C — plain `git clone` (only if you know what you're doing)**
+
+A normal `git clone` **ignores the template flag** — you inherit the full template history, and `origin` still points at the template repo. Pushing would push back to the template. To detach and start fresh:
+
+```bash
+git clone git@github.com:OmarLT-222/ai-app-template.git my-new-app
+cd my-new-app
+rm -rf .git
+git init && git add . && git commit -m "Initial commit"
+gh repo create my-new-app --private --source=. --remote=origin --push
+```
 
 ---
 
@@ -10,10 +44,7 @@ The template is for apps you **build with Claude Code's help**. Clone it, descri
 
 ### 1. Get the code
 
-```bash
-git clone <this-repo> my-new-app
-cd my-new-app
-```
+Follow one of the options above to create your project directory, then continue with step 2.
 
 ### 2. Set up the environment
 
